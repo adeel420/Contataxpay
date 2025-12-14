@@ -30,7 +30,7 @@ import hireBg from "./images/hire-bg.png";
 import service1 from "./images/service1.png";
 import service2 from "./images/service2.png";
 import hireShadow from "./images/hireShadow.png";
-import benefitshadow from "./images/benefitshadow.png";
+import benefitshadow from "./images/benefitShadow.png";
 
 export const assets = {
   logo,
