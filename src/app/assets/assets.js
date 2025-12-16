@@ -43,6 +43,9 @@ import heroBgShadowSmall from "./images/hero-bg-shadow-small.png";
 import heroBgRightShadowSmall from "./images/hero-bg-right-shadow-small.png";
 import bgRightShadow from "./images/bg-right-shadow.png";
 import featureIconBg from "./images/feature-icon-bg.png";
+import one from "./images/1.jpg";
+import service1 from "./images/service1.jpg";
+import service2 from "./images/service2.jpg";
 
 export const assets = {
   logo,
@@ -90,4 +93,7 @@ export const assets = {
   heroBgRightShadowSmall,
   bgRightShadow,
   featureIconBg,
+  one,
+  service1,
+  service2,
 };

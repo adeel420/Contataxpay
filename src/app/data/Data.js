@@ -246,3 +246,10 @@ export const invoicing2 = [
     color: "#A3D1F8",
   },
 ];
+
+export const benifits = [
+  { id: 0, img: assets.tick, title: "Tax filing and compliance" },
+  { id: 1, img: assets.tick, title: "Industry specific expertise" },
+  { id: 2, img: assets.tick, title: "Secure and efficient " },
+  { id: 3, img: assets.tick, title: "Transparent and professional" },
+];
