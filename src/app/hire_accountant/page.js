@@ -129,7 +129,6 @@ const page = () => {
               Certified professionals
             </p>
           </div>
-        </div>
 
         {/* Bottom Grid Section */}
         <div className="flex justify-center mt-5 relative z-10">
