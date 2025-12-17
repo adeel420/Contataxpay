@@ -29,16 +29,19 @@ const page = () => {
           fill
         />
         <div className="flex flex-col pt-16 gap-[24px] items-center justify-center ">
-          <h1 className="text-[48px] font-semibold text-center mb-4 text-white ">
+          <h1 className="text-[32px] md:text-[48px] font-semibold text-center mb-4 text-white ">
             Find the ideal accountant for your business, <br />
             anywhere
           </h1>
-          <p className="text-[24px] font-semibold text-center mb-4 text-white ">
+          <p className="text-[18px] hidden md:block md:text-[24px] font-semibold text-center mb-4 text-white ">
             Connect with verified, certified, and specialized accountants
             familiar with local <br /> laws, industry requirements, and business
             needs.
           </p>
-          <button className="bg-[#3D70FE] z-40 shadow-[0_4px_6px_-4px_rgba(0,0,0,0.10),_0_10px_15px_-3px_rgba(0,0,0,0.10)] py-[12px] px-[46px] text-white font-normal text-[16px] rounded-[8px] cursor-pointer ">
+          <p className="text-[18px] md:hidden w-[367px] block md:text-[24px] font-semibold text-center mb-4 text-white ">
+            Connect with verified, certified, and specialized accountants .
+          </p>
+          <button className="bg-[#3D70FE] z-40 shadow-[0_4px_6px_-4px_rgba(0,0,0,0.10),0_10px_15px-3px_rgba(0,0,0,0.10)] py-[12px] px-[46px] text-white font-normal text-[16px] rounded-[8px] cursor-pointer ">
             Find perfect accountant →
           </button>
         </div>
@@ -90,14 +93,16 @@ const page = () => {
         className="bg-cover bg-center h-[850px] mb-12 mx-8 z-50 rounded-[30px] px-10 relative"
         style={{ backgroundImage: `url(${assets.benifitsBg.src})` }}
       >
-        <div className="flex flex-row items-center justify-between pt-52">
-          <div
-            className="bg-cover bg-center absolute w-[762px] h-[686px] left-0 top-1/2 -translate-y-1/2"
-            style={{
-              backgroundImage: `url(${assets.benifitsShadow.src})`,
-              zIndex: 1,
-            }}
-          />
+        {/* Background Shadow Image */}
+        <div
+          className="absolute hidden md:block
+    w-[762px] h-[686px] left-0 top-1/2 -translate-y-1/2
+    bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${assets.benifitsShadow.src})`,
+            zIndex: 1,
+          }}
+        />
 
           {/* 1st container */}
           <div className="w-[231px] mt-20 h-[196px] bg-white border flex flex-col items-center justify-center gap-[16px] border-[white] rounded-[30px] shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] backdrop-blur-[16px] relative z-10">
@@ -126,16 +131,24 @@ const page = () => {
           </div>
         </div>
 
-        {/* Last Grid */}
-        <div className="flex items-center mt-14 justify-center ">
-          <div className="w-[90%] grid grid-cols-4 items-center ">
+        {/* Bottom Grid Section */}
+        <div className="flex justify-center mt-5 relative z-10">
+          <div
+            className="w-full max-w-[1000px]
+      grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+      gap-4 sm:gap-6"
+          >
             {benifits.map((item) => (
               <div
-                className="w-[231px] h-[196px] bg-white border flex flex-col items-center justify-center gap-[16px] border-[white] rounded-[30px] shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] backdrop-blur-[16px] relative z-10"
                 key={item.id}
+                className="w-full max-w-[231px] h-[180px] sm:h-[196px]
+          bg-white flex flex-col items-center justify-center gap-4
+          rounded-[20px] sm:rounded-[30px]
+          shadow-[0_8px_32px_0_rgba(31,38,135,0.10)]
+          backdrop-blur-[16px] mx-auto"
               >
-                <Image src={item.img} alt="" className="" />
-                <p className="text-[14px] font-normal text-center px-4">
+                <Image src={item.img} alt="" />
+                <p className="text-[13px] sm:text-[14px] text-center px-4">
                   {item.title}
                 </p>
               </div>
