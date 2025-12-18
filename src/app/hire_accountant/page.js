@@ -102,7 +102,7 @@ const page = () => {
           }}
         />
 
-        <h1 className="text-[22px] text-center mt-[300px] md:mt-0 sm:text-[28px] font-bold">
+        <h1 className="text-[22px] md:hidden block text-center mt-[300px] md:mt-0 sm:text-[28px] font-bold">
           Benefits
         </h1>
         {/* Top Section */}
